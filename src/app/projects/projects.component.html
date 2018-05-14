@@ -1,0 +1,21 @@
+<br>
+<br>
+<div class="row">
+  <div class="col-10 offset-1">
+    <h2 id="projects"><u>Projects</u>:</h2>
+    <br>
+    <ngb-accordion [closeOthers]="true" activeIds="ngb-panel-0">
+      <ngb-panel *ngFor="let project of projects" title="{{ project.name }}">
+        <ng-template ngbPanelContent>
+          <p>
+            {{ project.description }}
+            <br>
+            <span [ngStyle]="{'font-size.px':15}">Major language used: {{project.language}}</span>
+            <br>
+            For more details: <a [href]="project.svn_url" target="_blank">github</a>
+          </p>
+        </ng-template>
+      </ngb-panel>
+    </ngb-accordion>
+  </div>
+</div>
