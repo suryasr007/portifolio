@@ -8,15 +8,9 @@ import { Project } from "../models/project";
   styleUrls: ['./projects.component.css']
 })
 export class ProjectsComponent implements OnInit {
-  /*
-  user:string= 'suryasr007';
-  github calling function
-  Filter the projects
-  List all valid projects
-  */
 
   projects_to_be_fetched: string[] = ['suryasr007/random-password-generator', 'rapidstack/WAR', 'suryasr007/clip', 
-  'suryasr007/portifolio', 'suryasr007/languagepoll', 'suryasr007/dev-logger', 'suryasr007/war-loopback', 'suryasr007/blog-django-RESTapi'];
+  'suryasr007/portifolio', 'suryasr007/languagepoll', 'suryasr007/dev-logger', 'suryasr007/war-loopback', 'suryasr007/blog-django-RESTapi', 'suryasr007/zenoss-client'];
 
   projects: Project[] = [];
   
